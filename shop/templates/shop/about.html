@@ -1,0 +1,44 @@
+{% extends 'shop/basic.html' %}
+
+{% block titles %}This is About Page{% endblock %}
+{% block css %}
+    .box{
+           color: #f8c3cc;
+    /* background-color: #1d1b1c; */
+    width: 80vw;
+    height: 300px;
+    padding: 20px 40px;
+    margin: 5vh 10vw;
+    font-size: 4vh;
+    text-align: center;
+    font-weight: 500;
+
+    }
+ h1{font-size:6vh;
+    font-family: fantasy;
+    color: #bff6bf;
+}
+   body{
+{% load static %}
+           background-image: url('{% static 'shop/aboutus.jpg'" %}');
+    backdrop-filter: blur(8px);
+}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="box">
+    <h1>ABOUT US</h1>
+    <p>We’re a young and talented group of entrepreneurs and engineers with a groundbreaking idea that we hope will
+        contribute towards a better tomorrow. We provide smart solutions for companies of all sizes and pride ourselves
+
+        on our unparalleled, dedicated service. At VUGS Technologies, we believe that the right understanding and
+        technological edge can lead companies towards a successful future. We always seek valuable feedback from our
+        clients in order to learn and evolve. Contact us today to set up a meeting with one of our sales
+
+        representatives or request a demo.</p>
+</div>
+
+
+{% endblock %}

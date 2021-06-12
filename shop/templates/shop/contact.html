@@ -1,0 +1,67 @@
+{% extends 'shop/basic.html' %}
+
+{% block titles %}This is About Page{% endblock %}
+{% block css %}
+    .box{
+           color: yellow;
+
+    width: 80vw;
+    height: 300px;
+    padding: 20px 40px;
+    margin: 2vh 10vw;
+
+    }
+h1{color: #141313;
+    font-weight: 1000;
+    font-family: emoji;
+}
+h2
+{font-size: 3vh;
+    font-family: initial;
+    color: #71ff29;
+}
+p{font-size: 2.5vh;
+    color: #040404;
+    font-family: fangsong;
+}
+ body{
+{% load static %}
+           background-image: url('{% static 'shop/contactus.jpg'" %}');
+               background-size: cover;
+
+}
+{% endblock %}
+
+
+{% block body %}
+
+<div class="box">
+    <h1>WE WOULD LOVE TO HEAR FROM YOU!</h1>
+    <br>
+    <h2>VISIT US:</h2>
+    <p>Unit No.6561,'C' Wing<br>
+    civil Lines-Agra,india
+    </p>
+
+    <br>
+    <h2>Email US:</h2>
+    <p>info@vugstechnologies.com
+    </p>
+
+    <br>
+    <h2>CALL US:</h2>
+    <p>6834346853,6433224421
+    </p>
+    <br>
+    <h2>FOLLOW US ON:</h2>
+    <p>LinkedIn<br>
+        Github<br>
+        Facebook<br>
+        Twitter<br>
+        Instagram<br>
+
+    </p>
+</div>
+
+
+{% endblock %}

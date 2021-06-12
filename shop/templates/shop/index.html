@@ -1,0 +1,233 @@
+{% extends 'shop/basic.html' %}
+ {% block css %}
+
+          body{
+           {% load static %}
+           background-image: url('{% static 'shop/background.jpg'" %}');
+           backdrop-filter: blur(3px);
+
+           box-sizing: border-box;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+           }
+
+
+           .welcome{
+           font-family: 'Segoe UI Symbol',sans-serif;
+           font-size: 2.2rem;
+           padding:2.5rem 0px;
+
+          width:80%;
+          height:27%;
+              {% load static %}
+           background-image: url('{% static 'shop/qoutebg.jpg'" %}');
+          color:white;
+          text-align:center;
+          position:relative;
+          top:10px;
+          left:9.5%;
+
+          }
+
+.contain{
+background-color: #d3dde6;
+margin-top: 10%;
+
+}
+.work{
+    height: 8rem;
+    text-align: center;
+    background-color: #c1f3c1;
+    color: black;
+    padding: 35px;
+    font-family: emoji;
+    font-weight: 500;
+}
+}
+.bb{  background-color:aqua;
+}
+
+
+            .box{
+    color: #000000;
+    width: 96vw;
+    height: fit-content;
+    padding: 2rem;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 3vw 2vw;
+    text-align: center;
+             }
+
+
+    .formclass{width: 40vw;
+    height: 57vh;
+    background-color: antiquewhite;
+    color: #1d1818;
+    position: relative;
+    float: right;
+    padding: 2vh;
+    margin: 2vh 5vh;
+    border: solid 2px;
+    /* text-align: center;
+    }
+
+}
+
+
+{% endblock %}
+
+ {% block body %}
+
+
+  <div class="welcome">
+      Welcome to VUGS Technologies!
+<br>
+      here comes the tagline!
+  </div>
+
+
+<div class="box">
+    At VUGS Technologies, we believe that our solutions will soon become one of the biggest segments in the industry.
+    We’ve only just started, but we already know that every product we build requires hard-earned skills, dedication
+    and a daring attitude. <br>Continue reading and learn all there is to know about the smart tech behind our successful
+    Software Startup.
+</div>
+<h1 style="text-align:center; background-color:white; color:black;">ABOUT US</h1>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" style="margin:0; background-color: #d0d0ae">
+
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5">Young And Talented</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+      <div>
+       <img class="bg-white shadow-sm mx-auto" src="{% static 'shop/Colleagues.jpg'" %}" alt"" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+    </div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Provide Smart Solutions</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+<div>
+       <img class="bg-white shadow-sm mx-auto" src="{% static 'shop/sol2.png'" %}" alt"" style="width: 25vw; height: 300px; border-radius: 21px 21px 0 0;">
+    </div>
+  </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Seeks Valuable Feedback</h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div>
+       <img class="bg-white shadow-sm mx-auto" src="{% static 'shop/feedback.jpg'" %}" alt"" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+    </div>
+  </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Right Understanding </h2>
+      <p class="lead">And an even wittier subheading.</p>
+    </div>
+    <div>
+       <img class="bg-white shadow-sm mx-auto" src="{% static 'shop/rut.jpg'" %}" alt"" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+    </div>
+  </div>
+</div>
+
+
+<section class="contain container" >
+
+
+<div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-1">
+
+        <h2 class="featurette-heading" style="padding: 0 10%">Want To Work With Us?<br><span class="text-muted">Apply Here!</span></h2>
+        <p class="lead " style="padding: 10% ">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+           <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'shop/jobs.jpg'" %}" alt"">
+      </div>
+    </div>
+
+
+
+
+
+    </section>
+
+
+
+<!--<div class="formclass">-->
+<!--    <h1>Schedule a meeting!</h1>-->
+<!--    <form>-->
+
+
+<!--        <div class="form-group">-->
+<!--    <label for="exampleFormControlInput1">Name</label>-->
+<!--    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">-->
+<!--  </div>-->
+<!--        <div class="form-group">-->
+<!--    <label for="exampleFormControlInput1">Contact No.</label>-->
+<!--    <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="xxxxxxxxxx">-->
+<!--  </div>-->
+
+<!--        <div class="form-group">-->
+<!--    <label for="exampleFormControlInput1">Email address</label>-->
+<!--    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">-->
+<!--  </div>-->
+<!--<br>-->
+<!--<div class="form-check">-->
+<!--  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">-->
+<!--  <label class="form-check-label" for="flexRadioDefault1">-->
+<!--    Set up a meeting with our sales representative.-->
+<!--  </label>-->
+<!--</div>-->
+<!--<div class="form-check">-->
+<!--  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>-->
+<!--  <label class="form-check-label" for="flexRadioDefault2">-->
+<!--   Request for a demo.-->
+
+<!--  </label>-->
+<!--</div>-->
+<!--        <br>-->
+<!--       <button type="button" class="btn btn-dark">SUBMIT</button>-->
+
+<!--</form>-->
+
+<!--</div>-->
+
+<!--  <footer>-->
+<!--    Copyright &copy; VUGS Technologies - All rights reserved-->
+<!--  </footer>-->
+
+<footer class="contain py-5" style="background-color: white; width=100vw; margin 10% 0; padding:3%;">
+  <div class="row">
+
+    <div class="col-6 col-md">
+        <a class="text-muted" href="/about"><h2>About US</h2></a>
+
+    </div>
+    <div class="col-6 col-md">
+        <a class="text-muted" href="#"><h2>Products</h2></a>
+
+    </div>
+    <div class="col-6 col-md">
+        <a class="text-muted" href="#"><h2>Technologies</h2></a>
+
+    </div>
+      <div class="col-6 col-md">
+        <a class="text-muted" href="/about"><h2>Community</h2></a>
+
+    </div>
+    <div class="col-6 col-md">
+      <a class="text-muted" href="/contact"><h2>Contact US</h2><a></a>
+
+  </div>
+  </div>
+    <div >
+      <big class="d-block mb-3 text-muted" style="text-align:center; margin-top:2vw;">Copyright &copy; VUGS Technologies - All rights reserved</big>
+    </div>
+</footer>
+{% endblock %}
