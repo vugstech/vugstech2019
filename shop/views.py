@@ -12,6 +12,16 @@ def index(request):
     # nslides = n//4 + ceil((n/4)-(n//4))
     # params = {'product': products}
     # return render(request,'shop/index.html',params)
+    if request.method == "POST":
+        print(request)
+        name = request.POST.get('name', '')
+        phone = request.POST.get('contact', '')
+        email = request.POST.get('email', '')
+        desc = request.POST.get('anything', '')
+        check1 = request.POST.get('check1', 'off')
+        check2 = request.POST.get('check2', 'off')
+        meeting= contct(name=name, phone=phone, email=email, desc=desc, check1=check1, check2=check2)
+        meeting.save()
     return render(request, 'shop/index.html')
 
 
@@ -39,16 +49,7 @@ def checkout(request):
     return HttpResponse("we're at checkout")
 
 
-def meeting(request):
-    if request.method == "POST":
-        print(request)
-        name = request.POST.get('name', '')
-        phone = request.POST.get('contact', '')
-        email = request.POST.get('email', '')
-        desc = request.POST.get('anything', '')
-        check1 = request.POST.get('check1', 'off')
-        check2 = request.POST.get('check2', 'off')
-        meeting= contct(name=name, phone=phone, email=email, desc=desc, check1=check1, check2=check2)
-        meeting.save()
-
-    return render(request, 'shop/index.html')
+# def meeting(request):
+#
+#
+#     return render(request, 'shop/index.html')
