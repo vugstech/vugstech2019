@@ -24,7 +24,7 @@ class contact(models.Model):
     check1= models.CharField(max_length=5, default="")
     check2= models.CharField(max_length=5, default="")
 
-    def __str__(self):
+    def __str__(self)
         return self.name
 
 
