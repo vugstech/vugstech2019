@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Product, contct
+from .models import Product, contact
 from math import ceil
 
 
@@ -20,7 +20,7 @@ def index(request):
         desc = request.POST.get('anything', '')
         check1 = request.POST.get('check1', 'off')
         check2 = request.POST.get('check2', 'off')
-        meeting= contct(name=name, phone=phone, email=email, desc=desc, check1=check1, check2=check2)
+        meeting= contact(name=name, phone=phone, email=email, desc=desc, check1=check1, check2=check2)
         meeting.save()
     return render(request, 'shop/index.html')
 
@@ -29,7 +29,7 @@ def about(request):
     return render(request, 'shop/about.html')
 
 
-def contact(request):
+def contactus(request):
     return render(request, 'shop/contact.html')
 
 
@@ -48,8 +48,3 @@ def product(request):
 def checkout(request):
     return HttpResponse("we're at checkout")
 
-
-# def meeting(request):
-#
-#
-#     return render(request, 'shop/index.html')
