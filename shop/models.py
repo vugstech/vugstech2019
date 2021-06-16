@@ -24,8 +24,23 @@ class contact(models.Model):
     check1= models.CharField(max_length=5, default="")
     check2= models.CharField(max_length=5, default="")
 
-    def __str__(self)
+    def __str__(self):
         return self.name
+
+
+class fc(models.Model):
+    msg_id = models.AutoField(primary_key = True)
+    name = models.CharField(max_length=50, default="")
+    phone = models.IntegerField(default=1)
+    email = models.CharField(max_length=50, default="")
+    desc = models.CharField(max_length=500, default="")
+    check1= models.CharField(max_length=5, default="")
+    check2= models.CharField(max_length=5, default="")
+
+    def __str__(self):
+        return self.name
+
+
 
 
 
